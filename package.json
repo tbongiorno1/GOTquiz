@@ -1,0 +1,26 @@
+{
+  "name": "(gotquiz)",
+  "version": "1.0.0",
+  "description": "first project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbongiorno1/GOTquiz.git"
+  },
+  "author": "TJB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tbongiorno1/GOTquiz/issues"
+  },
+  "homepage": "https://github.com/tbongiorno1/GOTquiz#readme",
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.0",
+    "eslint-plugin-react": "^6.2.0"
+  }
+}

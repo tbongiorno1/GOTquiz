@@ -1,0 +1,72 @@
+h1  {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+h2 {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+body {
+  background-color: rgb(57, 54, 54);
+  background-image: url("http://i.imgur.com/Ilrem4A.jpg?1");
+}
+
+.questionWindow {
+  position: relative;
+  top: 5rem;
+  left: 32%;
+  height: 500px;
+  width: 500px;
+  background-color: rgba(19, 18, 18, 0.85);
+  border-radius: 1rem;
+  margin-bottom: 25px;
+}
+
+.list-inline {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  list-style: none;
+  display: inline-block;
+}
+
+ul.list-inline {
+  padding-left: 0;
+}
+
+.list-inline > li {
+  display: inline;
+  padding: 0 2px;
+}
+
+.button{
+  background-color: black;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  width: 80px;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+img {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  opacity: 1;
+}
