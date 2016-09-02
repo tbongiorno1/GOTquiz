@@ -17,6 +17,7 @@ h2 {
 h3 {
   text-align: center;
   color: white;
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
   position: relative;
   top: 5rem;
   left: 32%;
-  height: 600px;
+  height: 700px;
   width: 500px;
   background-color: rgba(19, 18, 18, 0.85);
   border-radius: 1rem;
@@ -44,7 +45,7 @@ body {
 }
 
 ul.list-inline {
-  padding-left: 0;
+  left: 0;
 }
 
 .list-inline > li {
@@ -52,17 +53,52 @@ ul.list-inline {
   padding: 0 2px;
 }
 
-.button{
+#startButton {
+  position: absolute;
+  top: 20rem;
+  left: 44%;
+  background: #1c1f21;
+  background-image: -webkit-linear-gradient(top, #1c1f21, #44494d);
+  background-image: -moz-linear-gradient(top, #1c1f21, #44494d);
+  background-image: -ms-linear-gradient(top, #1c1f21, #44494d);
+  background-image: -o-linear-gradient(top, #1c1f21, #44494d);
+  background-image: linear-gradient(to bottom, #1c1f21, #44494d);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: bold;
+}
+
+#startButton:hover {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #000000);
+  background-image: -moz-linear-gradient(top, #000000, #000000);
+  background-image: -ms-linear-gradient(top, #000000, #000000);
+  background-image: -o-linear-gradient(top, #000000, #000000);
+  background-image: linear-gradient(to bottom, #000000, #000000);
+  text-decoration: none;
+}
+
+
+
+.button {
   background-color: black;
   border-radius: 1rem;
   border: none;
   color: white;
-  width: 80px;
-  padding: 15px 15px;
+  width: 100px;
+  height: 200px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 img {

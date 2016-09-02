@@ -2,7 +2,7 @@
 
 // This quiz will consist of:
 
-  1. 20 multiple choice questions with answers numbered 1-5
+  1. 10 multiple choice questions with answers numbered 1-5
   2. The number-value for each answer will be placed into an array
   3. at the end of the quiz the array will be totaled. Depending on
     the returned value, one of 10 game of thrones character's pictures
