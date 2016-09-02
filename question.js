@@ -9,6 +9,19 @@ class Question {
     this.answerFourList = ['Draw your sword/. Today is not the day you die', '4.2'];
     this.imgList = ['http://i.imgur.com/bFzPiBP.jpg', 'http://i.imgur.com/NAPMUFQ.jpg'];
     this.questionCount = 0;
+    this.characterGuess = 0;
+  }
+  questionPlusOne() {
+    this.characterGuess += 1;
+  }
+  questionPlusTwo() {
+    this.characterGuess += 2;
+  }
+  questionPlusThree() {
+    this.characterGuess += 3;
+  }
+  questionPlusFour() {
+    this.characterGuess += 4;
   }
   render() {
     const newWindow = document.createElement('div');
@@ -32,6 +45,20 @@ class Question {
     const allButtons = document.getElementsByClassName('button');
     for (let butts of allButtons) {
       butts.addEventListener('click', function () {
+        if (this.butts === this.answerOneList) {
+          console.log(self.characterGuess);
+          self.questionPlusOne();
+          console.log(self);
+          console.log(self.characterGuess);
+        } else if ($('.button').on('click') === this.answerTwoList) {
+          self.questionPlusTwo();
+        } else if ($('.button').on('click') === this.answerThreeList) {
+          self.questionPlusThree();
+        } else if ($('.button').on('click') === this.answerFourList) {
+          self.questionPlusFour();
+        }
+        // this.characterGuess +1;
+        // console.log(this.characterGuess);
         self.render();
       });
     }

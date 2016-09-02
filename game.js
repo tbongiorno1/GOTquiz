@@ -5,4 +5,7 @@ class Game {
   }
   render() {
   }
+  endGame() {
+
+  }
 }
