@@ -1,11 +1,7 @@
 /* eslint-env jquery */
 
-class Game {
-  constuctor() {
+function endGame() {
+    if (this.questionList === undefined) {
+      alert('game over dude');
+    }
   }
-  render() {
-  }
-  endGame() {
-
-  }
-}
