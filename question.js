@@ -3,18 +3,18 @@
 class Question {
   constructor() {
     this.questionList = ['You are walking through the woods. You see a young boy all alone holding a sign for donations of coins. As you begin to approach you have a weird feeling that something is wrong. What do you do?', 'While doing your chores in the castle you over-hear a juicey bit of information about the queen. What do you do with this information?'];
-    this.answerOneList = ['Walk over and give the boy some coins Youre sure its nothing', '1.2'];
-    this.answerTwoList = ['Run like the wind! Who knows what kind of scam this bandit is pulling!', '2.2'];
-    this.answerThreeList = ['Skeptically walk over and question the boy', '3.2'];
-    this.answerFourList = ['Draw your sword/. Today is not the day you die', '4.2'];
+    this.answerOneList = ['Walk over and give the boy some coins Youre sure its nothing', 'Go about your business, you cannot be bothered with the business of Blackmail'];
+    this.answerTwoList = ['Run like the wind! Who knows what kind of scam this bandit is pulling!', 'Run back to your quarters without thinking twice. What if someone has seen you?'];
+    this.answerThreeList = ['Skeptically walk over and question the boy', 'Stay Hidden and listen a little more. Who knows what juicey details might be uncovered.'];
+    this.answerFourList = ['Draw your sword/. Today is not the day you die', 'Run directly to Lord Varus and spill your guts about everything you\'ve heard'];
     this.imgList = ['http://i.imgur.com/bFzPiBP.jpg', 'http://i.imgur.com/NAPMUFQ.jpg'];
     this.questionCount = 0;
     this.characterGuess = 0;
   }
   revealCharacter() {
     if (this.characterGuess <= 3) {
-    console.log('You are Cersei');
-    window.alert('You are a Cersei');
+    console.log('You are Hodor');
+    window.alert('You are a Hodor! So innocent.. So blissfully ignorant...');
   } else if (this.characterGuess > 3 && this.characterGuess < 6) {
     console.log('You are a Stark');
     window.alert('You are a Stark');
