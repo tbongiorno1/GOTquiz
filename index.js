@@ -10,3 +10,9 @@ function startGame() {
 }
 
 $('#startButton').on('click', startGame);
+
+function startNewGame() {
+  window.location.reload();
+}
+
+$('#newQuizButton').on('click', startNewGame);
