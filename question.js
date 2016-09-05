@@ -2,12 +2,12 @@
 
 class Question {
   constructor() {
-    this.questionList = ['You are walking through the woods. You see a young boy all alone holding a sign for donations of coins. As you begin to approach you have a weird feeling that something is wrong. What do you do?', 'While doing your chores in the castle you over-hear a juicey bit of information about the queen. What do you do with this information?'];
-    this.answerOneList = ['Walk over and give the boy some coins Youre sure its nothing', 'Go about your business, you cannot be bothered with the business of Blackmail'];
-    this.answerTwoList = ['Run like the wind! Who knows what kind of scam this bandit is pulling!', 'Run back to your quarters without thinking twice. What if someone has seen you?'];
-    this.answerThreeList = ['Skeptically walk over and question the boy', 'Stay Hidden and listen a little more. Who knows what juicey details might be uncovered.'];
-    this.answerFourList = ['Draw your sword, Today is not the day you die', 'Run directly to Lord Varus and spill your guts about everything you\'ve heard'];
-    this.imgList = ['http://i.imgur.com/bFzPiBP.jpg', 'http://i.imgur.com/NAPMUFQ.jpg'];
+    this.questionList = ['What is your favorite movie?', 'You are walking through the woods. You see a young boy all alone holding a sign for donations of coins. As you begin to approach you have a weird feeling that something is wrong. What do you do?', 'While doing your chores in the castle you over-hear a juicey bit of information about the queen. What do you do with this information?'];
+    this.answerOneList = ['Frozen', 'Walk over and give the boy some coins Youre sure its nothing', 'Go about your business, you cannot be bothered with the business of Blackmail'];
+    this.answerTwoList = ['I Love You Man', 'Run like the wind! Who knows what kind of scam this bandit is pulling!', 'Run back to your quarters without thinking twice. What if someone has seen you?'];
+    this.answerThreeList = ['The Notebook', 'Skeptically walk over and question the boy', 'Stay Hidden and listen a little more. Who knows what juicey details might be uncovered.'];
+    this.answerFourList = ['Sharknado', 'Draw your sword, Today is not the day you die', 'Run directly to Lord Varus and spill your guts about everything you\'ve heard'];
+    this.imgList = ['http://i.imgur.com/MIBBSZ1.jpg', 'http://i.imgur.com/bFzPiBP.jpg', 'http://i.imgur.com/NAPMUFQ.jpg'];
     this.questionCount = 0;
     this.characterGuess = 0;
   }
@@ -60,7 +60,7 @@ class Question {
     this.questionCount ++;
     document.body.appendChild(newWindow);
     const y = $(window).scrollTop();
-    $("html, body").animate({ scrollTop: y + $(window).height() }, 600);
+    $("html, body").animate({ scrollTop: y + $(window).height() }, 1000);
     this.clickEventHandler();
   }
   clickEventHandler() {
@@ -70,7 +70,7 @@ class Question {
       if(butts.id === 'buttonOne'){
         butts.addEventListener('click', () => {
           self.questionPlusOne();
-          if (self.questionCount < 2) {
+          if (self.questionCount < 3) {
             self.render();
           } else {
             self.revealCharacter();
@@ -79,7 +79,7 @@ class Question {
       } else if(butts.id ==='buttonTwo') {
         butts.addEventListener('click', () => {
           self.questionPlusTwo();
-          if (self.questionCount < 2) {
+          if (self.questionCount < 3) {
             self.render();
           } else {
             self.revealCharacter();
@@ -88,7 +88,7 @@ class Question {
       } else if (butts.id ==='buttonThree') {
         butts.addEventListener('click', () => {
           self.questionPlusThree();
-          if (self.questionCount < 2) {
+          if (self.questionCount < 3) {
             self.render();
           } else {
             self.revealCharacter();
@@ -97,7 +97,7 @@ class Question {
       } else if (butts.id === 'buttonFour') {
         butts.addEventListener('click', () => {
           self.questionPlusFour();
-          if (self.questionCount < 2) {
+          if (self.questionCount < 3) {
             self.render();
           } else {
             self.revealCharacter();
