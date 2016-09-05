@@ -4,6 +4,9 @@ function startGame() {
   const newQuestion = new Question;
   newQuestion.render();
   $(this).remove();
+  $('html, body').animate({
+      scrollTop: $(".questionWindow").offset().top
+  }, 1000);
 }
 
 $('#startButton').on('click', startGame);
