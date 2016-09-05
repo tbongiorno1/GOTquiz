@@ -1,11 +1,10 @@
- Project #1: The Game
+# ${1:Game Of Thrones Character Quiz}
+
+## Approach Taken
 
 
-Game Of Thrones Character Quiz
 
-Approach Taken
-
-This quiz consists of:
+## This quiz consists of:
 
   1. 5 multiple choice questions with answers numbered 1-4
 
@@ -16,7 +15,9 @@ This quiz consists of:
      will appear on the screen with a small phrase and animation telling you which
      character you are.
 
-TECHNOLOGIES USED
+## TECHNOLOGIES USED
+
+
 
 The technologies used were:
 
@@ -29,7 +30,9 @@ The technologies used were:
 
   4. HTML
 
-INSTALLATION
+## INSTALLATION
+
+
 
   To start the game:
 
