@@ -1,4 +1,4 @@
-# ${1:Game Of Thrones Character Quiz}
+# Game Of Thrones Character Quiz
 
 ## Approach Taken
 
