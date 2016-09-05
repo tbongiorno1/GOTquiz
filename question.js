@@ -12,9 +12,12 @@ class Question {
     this.characterGuess = 0;
   }
   revealCharacter() {
+    const charReveal = document.createElement('div');
+    charReveal.setAttribute('class','charRevealWindow');
     if (this.characterGuess <= 3) {
-    console.log('You are Hodor');
-    window.alert('You are a Hodor! So innocent.. So blissfully ignorant...');
+      charReveal.innerHTML = `<img src='http://i.imgur.com/W0cSVmq.jpg' style="margin:auto; width:500px;display:block"/>
+      <h3>You are a Hodor! So innocent.. So blissfully ignorant...</h3>
+    `;
   } else if (this.characterGuess > 3 && this.characterGuess < 6) {
     console.log('You are a Stark');
     window.alert('You are a Stark');
@@ -22,6 +25,7 @@ class Question {
     console.log('you are tyrion');
     window.alert('You are a Tyrion');
   }
+  document.body.appendChild(charReveal);
   }
   questionPlusOne() {
     this.characterGuess += 1;

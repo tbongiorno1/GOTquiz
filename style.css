@@ -25,6 +25,17 @@ body {
   background-image: url("http://i.imgur.com/Ilrem4A.jpg?1");
 }
 
+.charRevealWindow {
+  position: relative;
+  top: 5rem;
+  left: 32%;
+  height: 500px;
+  width: 500px;
+  background-color: rgba(19, 18, 18, 0.85);
+  border-radius: 1rem;
+  margin-bottom: 25px;
+}
+
 .questionWindow {
   position: relative;
   top: 5rem;
@@ -33,7 +44,7 @@ body {
   width: 500px;
   background-color: rgba(19, 18, 18, 0.85);
   border-radius: 1rem;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .list-inline {
